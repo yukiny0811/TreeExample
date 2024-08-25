@@ -11,6 +11,9 @@
 		5650F18A2C7B9861007B9395 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5650F1892C7B9861007B9395 /* ContentView.swift */; };
 		5650F18C2C7B9862007B9395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5650F18B2C7B9862007B9395 /* Assets.xcassets */; };
 		5650F18F2C7B9862007B9395 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5650F18E2C7B9862007B9395 /* Preview Assets.xcassets */; };
+		5650F1982C7B9878007B9395 /* SwiftyCreatives in Frameworks */ = {isa = PBXBuildFile; productRef = 5650F1972C7B9878007B9395 /* SwiftyCreatives */; };
+		5650F19A2C7B9DB0007B9395 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5650F1992C7B9DB0007B9395 /* ColorExtension.swift */; };
+		5650F19C2C7B9E57007B9395 /* TreeSketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5650F19B2C7B9E57007B9395 /* TreeSketch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,8 @@
 		5650F18B2C7B9862007B9395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5650F18E2C7B9862007B9395 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5650F1902C7B9862007B9395 /* TreeExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TreeExample.entitlements; sourceTree = "<group>"; };
+		5650F1992C7B9DB0007B9395 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		5650F19B2C7B9E57007B9395 /* TreeSketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeSketch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5650F1982C7B9878007B9395 /* SwiftyCreatives in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +60,8 @@
 			children = (
 				5650F1872C7B9861007B9395 /* TreeExampleApp.swift */,
 				5650F1892C7B9861007B9395 /* ContentView.swift */,
+				5650F19B2C7B9E57007B9395 /* TreeSketch.swift */,
+				5650F1992C7B9DB0007B9395 /* ColorExtension.swift */,
 				5650F18B2C7B9862007B9395 /* Assets.xcassets */,
 				5650F1902C7B9862007B9395 /* TreeExample.entitlements */,
 				5650F18D2C7B9862007B9395 /* Preview Content */,
@@ -85,6 +93,9 @@
 			dependencies = (
 			);
 			name = TreeExample;
+			packageProductDependencies = (
+				5650F1972C7B9878007B9395 /* SwiftyCreatives */,
+			);
 			productName = TreeExample;
 			productReference = 5650F1842C7B9861007B9395 /* TreeExample.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 5650F17B2C7B9861007B9395;
+			packageReferences = (
+				5650F1962C7B9878007B9395 /* XCRemoteSwiftPackageReference "swifty-creatives" */,
+			);
 			productRefGroup = 5650F1852C7B9861007B9395 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5650F19A2C7B9DB0007B9395 /* ColorExtension.swift in Sources */,
+				5650F19C2C7B9E57007B9395 /* TreeSketch.swift in Sources */,
 				5650F18A2C7B9861007B9395 /* ContentView.swift in Sources */,
 				5650F1882C7B9861007B9395 /* TreeExampleApp.swift in Sources */,
 			);
@@ -337,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5650F1962C7B9878007B9395 /* XCRemoteSwiftPackageReference "swifty-creatives" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yukiny0811/swifty-creatives";
+			requirement = {
+				kind = exactVersion;
+				version = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5650F1972C7B9878007B9395 /* SwiftyCreatives */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5650F1962C7B9878007B9395 /* XCRemoteSwiftPackageReference "swifty-creatives" */;
+			productName = SwiftyCreatives;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5650F17C2C7B9861007B9395 /* Project object */;
 }
